@@ -1,8 +1,8 @@
 <?php
-	//recebemos nosso par�metro vindo do form
+	//recebemos nosso parâmetro vindo do form (método POST)
 	$parametro = isset($_POST['pesquisaCliente']) ? $_POST['pesquisaCliente'] : null;
 	$msg = "";
-	//come�amos a concatenar nossa tabela
+	//começamos a concatenar nossa tabela
 	$msg .="<table class='table table-hover'>";
 	$msg .="	<thead>";
 	$msg .="		<tr>";
@@ -19,7 +19,7 @@
 	$msg .="	</thead>";
 	$msg .="	<tbody>";
 				
-				//requerimos a classe de conex�o
+				//requerimos a classe de conexão
 				require_once('class/Conexao.class.php');
 					try {
 						$pdo = new Conexao(); 
